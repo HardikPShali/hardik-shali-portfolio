@@ -23,7 +23,7 @@ const toggle = document.querySelector('.proof-toggle');
 toggle.addEventListener('click', () => {
   const active = document.body.classList.toggle('proof-on');
   toggle.setAttribute('aria-pressed', String(active));
-  toggle.querySelector('.toggle-label').textContent = active ? 'Proof visible' : 'Proof mode';
+  toggle.querySelector('.toggle-label').textContent = active ? 'Evidence shown' : 'Show evidence';
 });
 
 const detail = document.querySelector('.arch-detail');

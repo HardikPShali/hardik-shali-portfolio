@@ -15,3 +15,15 @@
 .experience{background:#0e0e0e}.experience-list{border-top:1px solid #424242}.role{display:grid;grid-template-columns:.65fr 1.4fr .55fr;gap:clamp(25px,5vw,80px);padding:52px 0;border-bottom:1px solid #333}.role-when{display:flex;flex-direction:column}.role-when strong{font-size:1.05rem}.role-when span,.role-when small{margin-top:9px;font:400 .65rem var(--mono);color:#858580}.role-story h3{max-width:720px;margin:0 0 16px;font-size:clamp(1.65rem,2.7vw,3rem);line-height:1.05;letter-spacing:-.045em}.role-story p{max-width:760px;margin:0;color:#aaa;line-height:1.7}.role-signal{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.role-signal span{padding:8px 10px;border:1px solid #3b3b3b;font:400 .6rem var(--mono);text-transform:uppercase;color:var(--lime)}
 @media(max-width:1050px){.role{grid-template-columns:.55fr 1.45fr}.role-signal{grid-column:2;flex-direction:row;flex-wrap:wrap}}
 @media(max-width:760px){.role{grid-template-columns:1fr;gap:24px}.role-signal{grid-column:1}}
+
+/* Final visual QA: keep decoration behind content and protect compact viewports. */
+.hero{isolation:isolate}
+.hero:before{z-index:0;pointer-events:none;opacity:.72}
+.hero-copy,.identity-card,.hero-index{position:relative;z-index:1}
+.hero-copy{min-width:0}
+.hero-lead{overflow-wrap:break-word}
+.button:focus-visible,.proof-toggle:focus-visible,footer button:focus-visible{outline:2px solid var(--lime);outline-offset:5px}
+.contact .button:focus-visible,.contact a:focus-visible{outline-color:#090909}
+.window-bar p,.project-meta,.project dt,.arch-title span,.role-when span,.role-when small,.role-signal span,.degree-top,.degree-type,.degree-bottom span,.signoff,footer{font-size:max(.7rem,12px)}
+@media(max-width:980px){.topbar nav{display:none}.topbar{grid-template-columns:1fr auto}}
+@media(max-width:760px){.hero:before{width:340px;height:340px;left:-260px;bottom:-160px;opacity:.45}.hero-actions{gap:22px}.button.primary{gap:35px}.topbar{height:76px}.hero{padding-top:108px}}

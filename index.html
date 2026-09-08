@@ -138,6 +138,50 @@
           <span class="proof-tag">frontend → API → file</span>
         </div>
       </article>
+
+      <article class="project reveal">
+        <div class="project-meta"><span>04</span><p>Operations · Product engineering</p></div>
+        <div class="project-copy">
+          <h3>OpsPilot</h3>
+          <p class="project-hook">The incident is already stressful. The interface does not need to join in.</p>
+          <p>I designed an incident operations workbench that turns service signals into clear decisions. Teams can search and filter live work, inspect customer impact, review decision history, and act before an SLA becomes an apology.</p>
+          <dl>
+            <div><dt>Problem</dt><dd>Critical context scattered across operational tools</dd></div>
+            <div><dt>Move</dt><dd>Decision-first queue, SLA signals, incident drill-down</dd></div>
+            <div><dt>Result</dt><dd>A focused workflow from alert to accountable action</dd></div>
+          </dl>
+          <div class="decision-note"><span>Key decision</span><p>Lead with the decision and customer impact, then reveal technical detail when the operator needs it.</p></div>
+          <p class="project-stack">React · TypeScript · Vinext · Responsive UI · Accessibility</p>
+          <div class="project-links"><a href="https://github.com/HardikPShali/opspilot" target="_blank" rel="noreferrer">Code ↗</a></div>
+        </div>
+        <div class="product-window opspilot" aria-label="A stylised OpsPilot incident operations workbench">
+          <div class="window-bar"><span></span><span></span><span></span><p>opspilot / incident command</p></div>
+          <div class="ops-layout"><aside>OP<i></i><i></i><i></i></aside><div class="ops-main"><p>MORNING BRIEF</p><strong>One decision needs you.</strong><div class="ops-metrics"><span>ACTIVE<b>03</b></span><span>HEALTHY<b>18/20</b></span></div><div class="ops-row hot"><i>P1</i><b>Checkout latency</b><small>72% SLA</small></div><div class="ops-row"><i>P2</i><b>Webhook delay</b><small>Monitoring</small></div></div></div>
+          <span class="proof-tag">search + filters + decision log</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-meta"><span>05</span><p>Agentic AI · Observability</p></div>
+        <div class="project-copy">
+          <h3>Agent Trace</h3>
+          <p class="project-hook">Because “the model did something weird” is not a debugging strategy.</p>
+          <p>I built a visual workspace for tracing AI agent runs step by step. It exposes model calls, tool use, decisions, latency, tokens, cost, and evaluation scores so a team can find the failure instead of guessing at the final answer.</p>
+          <dl>
+            <div><dt>Problem</dt><dd>Agent failures hidden behind a final response</dd></div>
+            <div><dt>Move</dt><dd>Execution trace, step inspector, comparisons, evaluations</dd></div>
+            <div><dt>Result</dt><dd>Every AI decision becomes inspectable and explainable</dd></div>
+          </dl>
+          <div class="decision-note"><span>Key decision</span><p>Separate model, tool, and decision steps visually so engineers can isolate the cause without reading a wall of logs.</p></div>
+          <p class="project-stack">React · TypeScript · Radix UI · Agent telemetry · Accessible tabs</p>
+          <div class="project-links"><a href="https://github.com/HardikPShali/agent-trace" target="_blank" rel="noreferrer">Code ↗</a></div>
+        </div>
+        <div class="product-window agenttrace" aria-label="A stylised Agent Trace observability workspace">
+          <div class="window-bar"><span></span><span></span><span></span><p>agent trace / run_9fa21</p></div>
+          <div class="trace-layout"><aside><b>AT</b><span>Refund payment</span><span>Account takeover</span><span>Update address</span></aside><div class="trace-main"><div class="trace-title"><p>EXECUTION PATH</p><strong>6 steps · 2,137 tokens</strong></div><div class="trace-step"><i>✦</i><span><small>MODEL</small><b>Interpret request</b></span><em>620ms</em></div><div class="trace-step tool"><i>⌁</i><span><small>TOOL</small><b>Fetch payment history</b></span><em>184ms</em></div><div class="trace-step decision"><i>{ }</i><span><small>DECISION</small><b>Duplicate confirmed</b></span><em>34ms</em></div><div class="trace-score"><span>EVALUATION</span><b>92/100</b></div></div></div>
+          <span class="proof-tag">trace + compare + evaluate</span>
+        </div>
+      </article>
     </section>
 
     <section class="thinking section" id="thinking">

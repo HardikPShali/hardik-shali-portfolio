@@ -182,6 +182,50 @@
           <span class="proof-tag">trace + compare + evaluate</span>
         </div>
       </article>
+
+      <article class="project reveal">
+        <div class="project-meta"><span>06</span><p>Security · Access control</p></div>
+        <div class="project-copy">
+          <h3>Access Lens</h3>
+          <p class="project-hook">Permissions should be tested before they become an incident report.</p>
+          <p>I built a visual workspace for designing, testing, and auditing role-based access. Teams can edit permission matrices, simulate a real person’s access, review members, and spot risky changes before they reach production.</p>
+          <dl>
+            <div><dt>Problem</dt><dd>Access rules scattered across code and tribal knowledge</dd></div>
+            <div><dt>Move</dt><dd>Permission matrix, role state, access simulator, audit context</dd></div>
+            <div><dt>Result</dt><dd>Security decisions become reviewable before release</dd></div>
+          </dl>
+          <div class="decision-note"><span>Key decision</span><p>Test permissions through a real person, resource, and action instead of asking reviewers to mentally execute a policy file.</p></div>
+          <p class="project-stack">React · TypeScript · Radix UI · RBAC modelling · Responsive UI</p>
+          <div class="project-links"><a href="https://github.com/HardikPShali/access-lens" target="_blank" rel="noreferrer">Code ↗</a></div>
+        </div>
+        <div class="product-window accesslens" aria-label="A stylised Access Lens permission workspace">
+          <div class="window-bar"><span></span><span></span><span></span><p>access lens / builder role</p></div>
+          <div class="access-layout"><aside><b>AL</b><span>Admin</span><span class="active">Builder</span><span>Analyst</span><span>Guest</span></aside><div class="access-main"><p>ROLE PERMISSIONS</p><strong>Builder</strong><div class="permission-row heading"><span>Resource</span><i>View</i><i>Create</i><i>Edit</i></div><div class="permission-row"><span>Projects</span><i>✓</i><i>✓</i><i>✓</i></div><div class="permission-row"><span>API keys</span><i>✓</i><i>✓</i><i>×</i></div><div class="access-test"><small>PERMISSION SIMULATOR</small><b>✓ Access allowed</b><span>Jon can create API keys</span></div></div></div>
+          <span class="proof-tag">matrix + simulator + audit</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-meta"><span>07</span><p>Developer tools · API contracts</p></div>
+        <div class="project-copy">
+          <h3>Contract Lab</h3>
+          <p class="project-hook">An API can pass its tests and still ruin someone else’s Friday.</p>
+          <p>I built an API contract workspace that compares schemas, identifies breaking changes, connects them to affected consumers, and runs sample requests. The interface turns a risky merge into a reviewable engineering decision.</p>
+          <dl>
+            <div><dt>Problem</dt><dd>Schema changes reviewed without consumer context</dd></div>
+            <div><dt>Move</dt><dd>Semantic diff, breaking-change findings, request lab</dd></div>
+            <div><dt>Result</dt><dd>Compatibility risks become visible before merge</dd></div>
+          </dl>
+          <div class="decision-note"><span>Key decision</span><p>Place the schema diff, severity, and affected consumer in one review flow so compatibility is judged with evidence.</p></div>
+          <p class="project-stack">React · TypeScript · OpenAPI concepts · Schema diff · Accessible tabs</p>
+          <div class="project-links"><a href="https://github.com/HardikPShali/contract-lab" target="_blank" rel="noreferrer">Code ↗</a></div>
+        </div>
+        <div class="product-window contractlab" aria-label="A stylised Contract Lab schema comparison">
+          <div class="window-bar"><span></span><span></span><span></span><p>contract lab / orders v2</p></div>
+          <div class="contract-layout"><aside><b>CL</b><span>POST /orders</span><span>GET /orders</span><span>PATCH /orders</span></aside><div class="contract-main"><div class="contract-alert">2 BREAKING CHANGES</div><div class="diff-columns"><pre><small>CURRENT</small><em> customerId: string</em><em class="removed">- couponCode</em><em> items: array</em></pre><pre><small>PROPOSED</small><em class="changed"> customerId: uuid</em><em class="added">+ currency: required</em><em class="added">+ minItems: 1</em></pre></div><div class="contract-consumer"><span>AFFECTED CONSUMER</span><b>checkout-web</b><small>Generated types will fail</small></div></div></div>
+          <span class="proof-tag">diff + impact + request test</span>
+        </div>
+      </article>
     </section>
 
     <section class="thinking section" id="thinking">

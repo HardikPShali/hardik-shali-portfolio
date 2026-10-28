@@ -1,354 +1,1084 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0a0a0a">
-  <meta name="description" content="Hardik Shali builds React and TypeScript products that stay clear, fast and maintainable as they grow.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Hardik Shali | Software Engineer Building Clear Products">
-  <meta property="og:description" content="Selected product engineering work across React, TypeScript, APIs, performance and design systems.">
-  <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="https://hardik-shali-portfolio.vercel.app/">
-  <title>Hardik Shali</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <a class="skip" href="#main">Skip to the good part</a>
-  <div class="progress" aria-hidden="true"><span></span></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta
+      name="description"
+      content="Hardik Shali, Frontend Developer in Berlin. Vue.js, React and TypeScript products with tested business logic, accessible components and fast load times."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Hardik Shali | Frontend Developer (Vue.js, React, TypeScript)"
+    />
+    <meta
+      property="og:description"
+      content="Four live TypeScript products, commercial Vue.js and React work for 10,000+ users, and a 40% cut in page load time."
+    />
+    <meta
+      property="og:url"
+      content="https://hardik-shali-portfolio.vercel.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://hardik-shali-portfolio.vercel.app/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Hardik Shali, Frontend Developer in Berlin"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://hardik-shali-portfolio.vercel.app/" />
+    <title>Hardik Shali | Frontend Developer in Berlin</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"><span></span></div>
 
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Hardik Shali, home">
-      <span class="brand-dot"></span><strong>Hardik Shali</strong><small>Software Engineer · React + TypeScript</small>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#work">Work</a><a href="#thinking">Decisions</a><a href="#experience">Experience</a><a href="#education">Education</a>
-    </nav>
-    <button class="proof-toggle" type="button" aria-pressed="false">
-      <span class="toggle-track"><i></i></span><span class="toggle-label">Show evidence</span>
-    </button>
-  </header>
-
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <p class="overline reveal">Software engineer · Berlin, Germany</p>
-        <h1 class="reveal">Complex systems.<br><em>Clear products.</em><br><span>Measured results.</span></h1>
-        <p class="hero-lead reveal">I turn unclear product problems into reliable software, from interface architecture and API contracts to performance and delivery. React and TypeScript are my sharpest tools. Ownership is the actual job.</p>
-        <div class="hero-actions reveal">
-          <a class="button primary" href="#work">Review selected work <span>↘</span></a>
-          <a class="button link" href="Hardik_Shali_CV.pdf" download="Hardik Shali CV.pdf">Download CV <span>↓</span></a>
-        </div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Hardik Shali, home">
+        <span class="brand-dot"></span><strong>Hardik Shali</strong
+        ><small>Frontend Developer</small>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-menu"
+      >
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span
+        ><span class="menu-label">Menu</span>
+      </button>
+      <div class="header-panel" id="site-menu">
+        <nav aria-label="Main navigation">
+          <a href="#work">Work</a><a href="#thinking">Approach</a
+          ><a href="#experience">Experience</a><a href="#education">Education</a
+          ><a href="#contact">Contact</a>
+        </nav>
+        <button class="proof-toggle" type="button" aria-pressed="false">
+          <span class="toggle-track"><i></i></span
+          ><span class="toggle-label">Show evidence</span>
+        </button>
       </div>
-      <aside class="identity-card reveal">
-        <div class="portrait-frame">
-          <img src="./profile-professional.jpeg" alt="Hardik Shali wearing a black suit and clear glasses">
-          <span class="image-label">Engineer, not stock photography</span>
-        </div>
-        <div class="identity-bottom">
-          <div><small>Focus</small><strong>Product engineering</strong></div>
-          <div><small>Location</small><strong>Berlin, Germany</strong></div>
-        </div>
-        <span class="available"><i></i> Available immediately</span>
-      </aside>
-      <div class="hero-index" aria-hidden="true">01</div>
-    </section>
+    </header>
 
-    <section class="evidence-strip" aria-label="Engineering evidence">
-      <div class="metric"><strong>10,000+</strong><span>users served in production</span><small class="receipt">Accubits product reach</small></div>
-      <div class="metric"><strong>40%</strong><span>faster load times</span><small class="receipt">lazy loading + render tuning</small></div>
-      <div class="metric"><strong>150+</strong><span>components redesigned</span><small class="receipt">shared UI architecture</small></div>
-      <div class="metric"><strong>2× M.Sc.</strong><span>software + data depth</span><small class="receipt">IT and Data Science</small></div>
-    </section>
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="overline reveal">Frontend developer · Berlin, Germany</p>
+          <h1 class="reveal">
+            Complex systems.<br /><em>Clear products.</em><br /><span
+              >Measured results.</span
+            >
+          </h1>
+          <p class="hero-lead reveal">
+            I build Vue.js and React frontends in TypeScript, with tested
+            business logic, accessible components and responsive layouts. I have
+            shipped commercial features to 10,000+ users and cut page load time
+            by 40%.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button primary" href="#work"
+              >Review selected work <span>↘</span></a
+            >
+            <a
+              class="button link"
+              href="Hardik_Shali_CV.pdf"
+              download="Hardik Shali CV.pdf"
+              >Download CV <span>↓</span></a
+            >
+          </div>
+        </div>
+        <aside class="identity-card reveal">
+          <div class="portrait-frame">
+            <img
+              src="./profile-professional.jpeg"
+              alt="Hardik Shali wearing a black suit and clear glasses"
+              width="1238"
+              height="1271"
+            />
+            <span class="image-label">Berlin, Germany</span>
+          </div>
+          <div class="identity-bottom">
+            <div><small>Focus</small><strong>Frontend engineering</strong></div>
+            <div>
+              <small>Work permit</small><strong>No sponsorship needed</strong>
+            </div>
+          </div>
+          <span class="available"><i></i> Available immediately</span>
+        </aside>
+        <div class="hero-index" aria-hidden="true">01</div>
+      </section>
 
-    <section class="work section" id="work">
-      <div class="section-head reveal">
-        <p class="overline">01 / Selected systems</p>
-        <h2>Built with intent.<br><em>Proven in use.</em></h2>
-        <p>Each project is an engineering decision: the constraint, the intervention, and the result. Adjectives have been placed on a strict budget.</p>
-      </div>
+      <section class="evidence-strip" aria-label="Engineering evidence">
+        <div class="metric">
+          <strong>10,000+</strong><span>users served in production</span
+          ><small class="receipt">Accubits product reach</small>
+        </div>
+        <div class="metric">
+          <strong>40%</strong><span>faster load times</span
+          ><small class="receipt"
+            >profiling, code splitting, lazy loading</small
+          >
+        </div>
+        <div class="metric">
+          <strong>4</strong><span>live TypeScript products</span
+          ><small class="receipt"
+            >designed, built and deployed since 2025</small
+          >
+        </div>
+        <div class="metric">
+          <strong>2× M.Sc.</strong><span>software + data depth</span
+          ><small class="receipt">IT and Data Science</small>
+        </div>
+      </section>
 
-      <article class="project reveal">
-        <div class="project-meta">
-          <span>01</span><p>Marketplace · Production</p>
+      <section class="work section" id="work">
+        <div class="section-head reveal">
+          <p class="overline">01 / Selected systems</p>
+          <h2>Built with intent.<br /><em>Proven in use.</em></h2>
+          <p>
+            Each project shows the problem, what I built and the outcome. The
+            four newest are live, so you can try them.
+          </p>
         </div>
-        <div class="project-copy">
-          <h3>FutureGrail</h3>
-          <p class="project-hook">A serious marketplace without the serious waiting time.</p>
-          <p>I built reusable storefront and dashboard experiences for a digital-asset platform handling large datasets and live interactions. The work reduced UI duplication and made the product meaningfully quicker.</p>
-          <dl>
-            <div><dt>Problem</dt><dd>Heavy dashboards and repeated UI</dd></div>
-            <div><dt>Move</dt><dd>Reusable architecture, lazy loading, API tuning</dd></div>
-            <div><dt>Result</dt><dd>40% less duplication, 30% faster dashboards</dd></div>
-          </dl>
-          <div class="decision-note"><span>Key decision</span><p>Reuse shared domain components without forcing every marketplace screen into one rigid template.</p></div>
-          <p class="project-stack">React · Next.js · TypeScript · Redux · REST APIs</p>
-          <div class="project-links"><a href="https://futuregrail.com" target="_blank" rel="noreferrer">Live product ↗</a><a href="https://github.com/HardikPShali/FutureGrail" target="_blank" rel="noreferrer">Code ↗</a></div>
-        </div>
-        <div class="product-window marketplace" aria-label="A stylised FutureGrail product dashboard">
-          <div class="window-bar"><span></span><span></span><span></span><p>futuregrail / dashboard</p></div>
-          <div class="market-layout"><aside>FG<br><i></i><i></i><i></i></aside><div class="market-main"><p>COLLECTION VALUE</p><strong>€84,240</strong><div class="chart"><i></i></div><div class="cards"><span>Watchlist<br><b>24</b></span><span>Movement<br><b>+18.4%</b></span></div></div></div>
-          <span class="proof-tag">30% faster dashboards</span>
-        </div>
-      </article>
 
-      <article class="project reveal">
-        <div class="project-meta"><span>02</span><p>Healthcare · Real-time</p></div>
-        <div class="project-copy">
-          <h3>HealthierU</h3>
-          <p class="project-hook">Because “Can you hear me?” should not be a product feature.</p>
-          <p>I shaped appointment and video-consultation journeys where clarity is not decoration; it is trust. Responsive UI, stable state, and reliable real-time communication kept the experience calm across devices.</p>
-          <dl>
-            <div><dt>Problem</dt><dd>Multi-step, high-trust patient journeys</dd></div>
-            <div><dt>Move</dt><dd>Agora video, responsive flows, clear states</dd></div>
-            <div><dt>Result</dt><dd>Dependable consultations across devices</dd></div>
-          </dl>
-          <div class="decision-note"><span>Key decision</span><p>Make connection, permission and failure states visible so patients always know what the system is doing.</p></div>
-          <p class="project-stack">React · Material UI · Agora SDK · REST APIs</p>
-          <div class="project-links"><a href="https://github.com/HardikPShali/HealthierU_React" target="_blank" rel="noreferrer">Code ↗</a></div>
-        </div>
-        <div class="product-window health" aria-label="A stylised HealthierU consultation interface">
-          <div class="window-bar"><span></span><span></span><span></span><p>healthieru / consultation</p></div>
-          <div class="video-stage"><div class="doctor">DR</div><div class="patient">HS</div><p>Dr. Sarah · connected</p><div class="controls"><i>◉</i><i>⌁</i><i>×</i></div></div>
-          <span class="proof-tag">real-time + responsive</span>
-        </div>
-      </article>
-
-      <article class="project reveal">
-        <div class="project-meta"><span>03</span><p>Full-stack · Code test</p></div>
-        <div class="project-copy">
-          <h3>Resort Map</h3>
-          <p class="project-hook">It started as ASCII. It ended as a booking product.</p>
-          <p>I turned a text map into an interactive cabana-booking experience, owning the parser, Node API, React interface, booking flow, persistence, and tests. Tiny brief, complete system.</p>
-          <dl>
-            <div><dt>Problem</dt><dd>Raw map data with booking rules</dd></div>
-            <div><dt>Move</dt><dd>Parser, REST API, interactive React map</dd></div>
-            <div><dt>Result</dt><dd>Tested end-to-end booking experience</dd></div>
-          </dl>
-          <div class="decision-note"><span>Key decision</span><p>Keep map parsing and booking rules on the server while the client focuses on interaction and clear availability.</p></div>
-          <p class="project-stack">React · Vite · Node.js · Express · Jest</p>
-          <div class="project-links"><a href="https://resort-map-app.vercel.app" target="_blank" rel="noreferrer">Live app ↗</a><a href="https://github.com/HardikPShali/Resort-Map-App" target="_blank" rel="noreferrer">Code ↗</a></div>
-        </div>
-        <div class="product-window resort" aria-label="A stylised interactive resort map">
-          <div class="window-bar"><span></span><span></span><span></span><p>resort / live map</p></div>
-          <div class="resort-map"><div class="water">POOL</div><div class="cabana c1">C1<small>Free</small></div><div class="cabana c2">C2<small>Booked</small></div><div class="cabana c3">C3<small>Free</small></div><div class="walkway"></div></div>
-          <span class="proof-tag">frontend → API → file</span>
-        </div>
-      </article>
-
-      <article class="project reveal">
-        <div class="project-meta"><span>04</span><p>Operations · Product engineering</p></div>
-        <div class="project-copy">
-          <h3>OpsPilot</h3>
-          <p class="project-hook">The incident is already stressful. The interface does not need to join in.</p>
-          <p>I designed an incident operations workbench that turns service signals into clear decisions. Teams can search and filter live work, inspect customer impact, review decision history, and act before an SLA becomes an apology.</p>
-          <dl>
-            <div><dt>Problem</dt><dd>Critical context scattered across operational tools</dd></div>
-            <div><dt>Move</dt><dd>Decision-first queue, SLA signals, incident drill-down</dd></div>
-            <div><dt>Result</dt><dd>A focused workflow from alert to accountable action</dd></div>
-          </dl>
-          <div class="decision-note"><span>Key decision</span><p>Lead with the decision and customer impact, then reveal technical detail when the operator needs it.</p></div>
-          <p class="project-stack">React · TypeScript · Vinext · Responsive UI · Accessibility</p>
-          <div class="project-links"><a href="https://opspilot-ten-nu.vercel.app/" target="_blank" rel="noreferrer">Live app ↗</a><a href="https://github.com/HardikPShali/opspilot" target="_blank" rel="noreferrer">Code ↗</a></div>
-        </div>
-        <div class="product-window opspilot" aria-label="A stylised OpsPilot incident operations workbench">
-          <div class="window-bar"><span></span><span></span><span></span><p>opspilot / incident command</p></div>
-          <div class="ops-layout"><aside>OP<i></i><i></i><i></i></aside><div class="ops-main"><p>MORNING BRIEF</p><strong>One decision needs you.</strong><div class="ops-metrics"><span>ACTIVE<b>03</b></span><span>HEALTHY<b>18/20</b></span></div><div class="ops-row hot"><i>P1</i><b>Checkout latency</b><small>72% SLA</small></div><div class="ops-row"><i>P2</i><b>Webhook delay</b><small>Monitoring</small></div></div></div>
-          <span class="proof-tag">search + filters + decision log</span>
-        </div>
-      </article>
-
-      <article class="project reveal">
-        <div class="project-meta"><span>05</span><p>Agentic AI · Observability</p></div>
-        <div class="project-copy">
-          <h3>Agent Trace</h3>
-          <p class="project-hook">Because “the model did something weird” is not a debugging strategy.</p>
-          <p>I built a visual workspace for tracing AI agent runs step by step. It exposes model calls, tool use, decisions, latency, tokens, cost, and evaluation scores so a team can find the failure instead of guessing at the final answer.</p>
-          <dl>
-            <div><dt>Problem</dt><dd>Agent failures hidden behind a final response</dd></div>
-            <div><dt>Move</dt><dd>Execution trace, step inspector, comparisons, evaluations</dd></div>
-            <div><dt>Result</dt><dd>Every AI decision becomes inspectable and explainable</dd></div>
-          </dl>
-          <div class="decision-note"><span>Key decision</span><p>Separate model, tool, and decision steps visually so engineers can isolate the cause without reading a wall of logs.</p></div>
-          <p class="project-stack">React · TypeScript · Radix UI · Agent telemetry · Accessible tabs</p>
-          <div class="project-links"><a href="https://agent-trace-eta.vercel.app/" target="_blank" rel="noreferrer">Live app ↗</a><a href="https://github.com/HardikPShali/agent-trace" target="_blank" rel="noreferrer">Code ↗</a></div>
-        </div>
-        <div class="product-window agenttrace" aria-label="A stylised Agent Trace observability workspace">
-          <div class="window-bar"><span></span><span></span><span></span><p>agent trace / run_9fa21</p></div>
-          <div class="trace-layout"><aside><b>AT</b><span>Refund payment</span><span>Account takeover</span><span>Update address</span></aside><div class="trace-main"><div class="trace-title"><p>EXECUTION PATH</p><strong>6 steps · 2,137 tokens</strong></div><div class="trace-step"><i>✦</i><span><small>MODEL</small><b>Interpret request</b></span><em>620ms</em></div><div class="trace-step tool"><i>⌁</i><span><small>TOOL</small><b>Fetch payment history</b></span><em>184ms</em></div><div class="trace-step decision"><i>{ }</i><span><small>DECISION</small><b>Duplicate confirmed</b></span><em>34ms</em></div><div class="trace-score"><span>EVALUATION</span><b>92/100</b></div></div></div>
-          <span class="proof-tag">trace + compare + evaluate</span>
-        </div>
-      </article>
-
-      <article class="project reveal">
-        <div class="project-meta"><span>06</span><p>Security · Access control</p></div>
-        <div class="project-copy">
-          <h3>Access Lens</h3>
-          <p class="project-hook">Permissions should be tested before they become an incident report.</p>
-          <p>I built a visual workspace for designing, testing, and auditing role-based access. Teams can edit permission matrices, simulate a real person’s access, review members, and spot risky changes before they reach production.</p>
-          <dl>
-            <div><dt>Problem</dt><dd>Access rules scattered across code and tribal knowledge</dd></div>
-            <div><dt>Move</dt><dd>Permission matrix, role state, access simulator, audit context</dd></div>
-            <div><dt>Result</dt><dd>Security decisions become reviewable before release</dd></div>
-          </dl>
-          <div class="decision-note"><span>Key decision</span><p>Test permissions through a real person, resource, and action instead of asking reviewers to mentally execute a policy file.</p></div>
-          <p class="project-stack">React · TypeScript · Radix UI · RBAC modelling · Responsive UI</p>
-          <div class="project-links"><a href="https://access-lens-beta.vercel.app/" target="_blank" rel="noreferrer">Live app ↗</a><a href="https://github.com/HardikPShali/access-lens" target="_blank" rel="noreferrer">Code ↗</a></div>
-        </div>
-        <div class="product-window accesslens" aria-label="A stylised Access Lens permission workspace">
-          <div class="window-bar"><span></span><span></span><span></span><p>access lens / builder role</p></div>
-          <div class="access-layout"><aside><b>AL</b><span>Admin</span><span class="active">Builder</span><span>Analyst</span><span>Guest</span></aside><div class="access-main"><p>ROLE PERMISSIONS</p><strong>Builder</strong><div class="permission-row heading"><span>Resource</span><i>View</i><i>Create</i><i>Edit</i></div><div class="permission-row"><span>Projects</span><i>✓</i><i>✓</i><i>✓</i></div><div class="permission-row"><span>API keys</span><i>✓</i><i>✓</i><i>×</i></div><div class="access-test"><small>PERMISSION SIMULATOR</small><b>✓ Access allowed</b><span>Jon can create API keys</span></div></div></div>
-          <span class="proof-tag">matrix + simulator + audit</span>
-        </div>
-      </article>
-
-      <article class="project reveal">
-        <div class="project-meta"><span>07</span><p>Developer tools · API contracts</p></div>
-        <div class="project-copy">
-          <h3>Contract Lab</h3>
-          <p class="project-hook">An API can pass its tests and still ruin someone else’s Friday.</p>
-          <p>I built an API contract workspace that compares schemas, identifies breaking changes, connects them to affected consumers, and runs sample requests. The interface turns a risky merge into a reviewable engineering decision.</p>
-          <dl>
-            <div><dt>Problem</dt><dd>Schema changes reviewed without consumer context</dd></div>
-            <div><dt>Move</dt><dd>Semantic diff, breaking-change findings, request lab</dd></div>
-            <div><dt>Result</dt><dd>Compatibility risks become visible before merge</dd></div>
-          </dl>
-          <div class="decision-note"><span>Key decision</span><p>Place the schema diff, severity, and affected consumer in one review flow so compatibility is judged with evidence.</p></div>
-          <p class="project-stack">React · TypeScript · OpenAPI concepts · Schema diff · Accessible tabs</p>
-          <div class="project-links"><a href="https://contract-lab.vercel.app/" target="_blank" rel="noreferrer">Live app ↗</a><a href="https://github.com/HardikPShali/contract-lab" target="_blank" rel="noreferrer">Code ↗</a></div>
-        </div>
-        <div class="product-window contractlab" aria-label="A stylised Contract Lab schema comparison">
-          <div class="window-bar"><span></span><span></span><span></span><p>contract lab / orders v2</p></div>
-          <div class="contract-layout"><aside><b>CL</b><span>POST /orders</span><span>GET /orders</span><span>PATCH /orders</span></aside><div class="contract-main"><div class="contract-alert">2 BREAKING CHANGES</div><div class="diff-columns"><pre><small>CURRENT</small><em> customerId: string</em><em class="removed">- couponCode</em><em> items: array</em></pre><pre><small>PROPOSED</small><em class="changed"> customerId: uuid</em><em class="added">+ currency: required</em><em class="added">+ minItems: 1</em></pre></div><div class="contract-consumer"><span>AFFECTED CONSUMER</span><b>checkout-web</b><small>Generated types will fail</small></div></div></div>
-          <span class="proof-tag">diff + impact + request test</span>
-        </div>
-      </article>
-    </section>
-
-    <section class="thinking section" id="thinking">
-      <div class="section-head reveal">
-        <p class="overline">02 / Engineering judgment</p>
-        <h2>Decisions before<br><em>decoration.</em></h2>
-        <p>Strong engineering reduces uncertainty in the problem, architecture, delivery and result.</p>
-      </div>
-      <div class="method-grid">
-        <article class="reveal"><span>01</span><h3>Frame the constraint</h3><p>I align user need, business value, and system reality before choosing a solution. The best architecture starts with a better question.</p><small>Clarity before velocity</small></article>
-        <article class="reveal"><span>02</span><h3>Design for change</h3><p>Clear contracts, predictable state, and deliberate boundaries keep today’s feature from becoming tomorrow’s migration project.</p><small>Simple scales further</small></article>
-        <article class="reveal"><span>03</span><h3>Make impact observable</h3><p>Performance work deserves numbers. Product decisions deserve user impact. Otherwise “better” is just a particularly confident mood.</p><small>Evidence over opinion</small></article>
-        <article class="reveal"><span>04</span><h3>Lower the next cost</h3><p>Tests, documentation, reusable patterns, and thoughtful reviews make every future change safer and faster.</p><small>Build team leverage</small></article>
-      </div>
-      <div class="architecture reveal">
-        <div class="arch-title"><p class="overline">A typical feature, end to end</p><span>Hover or tap the nodes</span></div>
-        <div class="arch-flow">
-          <button data-detail="Accessible, responsive interface built around the user journey"><i>01</i>React UI</button>
-          <span>→</span><button data-detail="Typed state and explicit loading, success, and error paths"><i>02</i>State</button>
-          <span>→</span><button data-detail="Clear contracts, validation, and useful failure messages"><i>03</i>REST API</button>
-          <span>→</span><button data-detail="Reliable services, persistence, monitoring, and deployment"><i>04</i>System</button>
-        </div>
-        <p class="arch-detail" aria-live="polite">One product decision, understood across the whole system.</p>
-      </div>
-    </section>
-
-    <section class="experience section" id="experience">
-      <div class="section-head reveal">
-        <p class="overline">03 / Experience</p>
-        <h2>Scope grew.<br><em>So did ownership.</em></h2>
-        <p>A career moving from implementation to production engineering, and from isolated screens to the systems and business rules behind them.</p>
-      </div>
-      <div class="experience-list">
-        <article class="role reveal">
-          <div class="role-when"><strong>ThoughtSpark</strong><span>Apr - Sep 2023</span><small>Implementation Consultant</small></div>
-          <div class="role-story"><h3>Translated operations into working systems.</h3><p>Converted business rules and stakeholder needs into practical workflows, data models and implementation decisions where technical detail meets operational reality.</p></div>
-          <div class="role-signal"><span>Business analysis</span><span>Workflow design</span><span>Data modelling</span></div>
+        <article class="project reveal">
+          <div class="project-meta">
+            <span>01</span>
+            <p>Developer tools · Live</p>
+          </div>
+          <div class="project-copy">
+            <h3>Contract Lab</h3>
+            <p class="project-hook">
+              An API contract review tool that catches breaking changes before
+              merge.
+            </p>
+            <p>
+              Classifies each schema change as breaking, risky or safe, flags
+              only the consumers it affects and blocks the merge until they
+              acknowledge. Exports OpenAPI 3.1.
+            </p>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>Schema changes reviewed without consumer context</dd>
+              </div>
+              <div>
+                <dt>Move</dt>
+                <dd>Change classification, consumer impact, merge gate</dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>Compatibility risks become visible before merge</dd>
+              </div>
+            </dl>
+            <div class="decision-note">
+              <span>Key decision</span>
+              <p>
+                Place the schema diff, severity, and affected consumer in one
+                review flow so compatibility is judged with evidence.
+              </p>
+            </div>
+            <p class="project-stack">
+              React · TypeScript · OpenAPI 3.1 · Schema diff · Accessible tabs
+            </p>
+            <div class="project-links">
+              <a
+                href="https://contract-lab.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live app ↗</a
+              ><a
+                href="https://github.com/HardikPShali/contract-lab"
+                target="_blank"
+                rel="noreferrer"
+                >Code ↗</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-window contractlab"
+            aria-label="A stylised Contract Lab schema comparison"
+          >
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <p>contract lab / orders v2</p>
+            </div>
+            <div class="contract-layout">
+              <aside>
+                <b>CL</b><span>POST /orders</span><span>GET /orders</span
+                ><span>PATCH /orders</span>
+              </aside>
+              <div class="contract-main">
+                <div class="contract-alert">2 BREAKING CHANGES</div>
+                <div class="diff-columns">
+                  <pre><small>CURRENT</small><em> customerId: string</em><em class="removed">- couponCode</em><em> items: array</em></pre>
+                  <pre><small>PROPOSED</small><em class="changed"> customerId: uuid</em><em class="added">+ currency: required</em><em class="added">+ minItems: 1</em></pre>
+                </div>
+                <div class="contract-consumer">
+                  <span>AFFECTED CONSUMER</span><b>checkout-web</b
+                  ><small>Generated types will fail</small>
+                </div>
+              </div>
+            </div>
+            <span class="proof-tag">classify + impact + merge gate</span>
+          </div>
         </article>
-        <article class="role reveal">
-          <div class="role-when"><strong>Accubits</strong><span>Apr 2022 - Apr 2023</span><small>Software Engineer · Frontend</small></div>
-          <div class="role-story"><h3>Shipped product experiences at production scale.</h3><p>Built React applications serving 10,000+ users, improved load performance by 40%, and established reusable patterns across more than 150 redesigned components.</p></div>
-          <div class="role-signal"><span>React architecture</span><span>Performance</span><span>Design systems</span></div>
-        </article>
-        <article class="role reveal">
-          <div class="role-when"><strong>Accubits</strong><span>Dec 2021 - Apr 2022</span><small>Software Engineering Intern</small></div>
-          <div class="role-story"><h3>Learned the production standard quickly.</h3><p>Moved from academic code to team delivery: version control, reviews, API integration, responsive implementation, and the discipline required to ship beyond localhost.</p></div>
-          <div class="role-signal"><span>Delivery habits</span><span>API integration</span><span>Responsive UI</span></div>
-        </article>
-      </div>
-    </section>
 
-    <section class="story section" id="story">
-      <div class="story-photo reveal"><img src="./profile-professional.jpeg" alt="" aria-hidden="true"><div class="photo-note">Formal photo.<br>Informal problem solver.</div></div>
-      <div class="story-copy reveal">
-        <p class="overline">04 / The human context</p>
-        <h2>India built my foundation.<br><em>Berlin widened the lens.</em></h2>
-        <p class="story-lead">I’m an engineer with two master’s degrees, product instincts, and a suspiciously high tolerance for debugging the problem behind the problem.</p>
-        <div class="story-columns">
-          <p>At Accubits, I learned to ship production React products, collaborate closely with design and backend teams, and take ownership beyond the happy path.</p>
-          <p>At ThoughtSpark, I translated messy business rules into usable workflows. My Data Science master’s in Berlin added a stronger understanding of data-driven systems.</p>
+        <article class="project reveal">
+          <div class="project-meta">
+            <span>02</span>
+            <p>Agentic AI · Live</p>
+          </div>
+          <div class="project-copy">
+            <h3>Agent Trace</h3>
+            <p class="project-hook">A debugger for AI agent runs.</p>
+            <p>
+              Replays seeded agent runs step by step with a latency waterfall,
+              compares two runs side by side and re-scores history when budgets
+              change, so a team can find the failing step instead of guessing.
+            </p>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>Agent failures hidden behind a final response</dd>
+              </div>
+              <div>
+                <dt>Move</dt>
+                <dd>
+                  Step replay, latency waterfall, run comparison, re-scoring
+                </dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>Every AI decision becomes inspectable and explainable</dd>
+              </div>
+            </dl>
+            <div class="decision-note">
+              <span>Key decision</span>
+              <p>
+                Separate model, tool, and decision steps visually so engineers
+                can isolate the cause without reading a wall of logs.
+              </p>
+            </div>
+            <p class="project-stack">
+              React · TypeScript · Radix UI · Agent telemetry · Accessible tabs
+            </p>
+            <div class="project-links">
+              <a
+                href="https://agent-trace-eta.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live app ↗</a
+              ><a
+                href="https://github.com/HardikPShali/agent-trace"
+                target="_blank"
+                rel="noreferrer"
+                >Code ↗</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-window agenttrace"
+            aria-label="A stylised Agent Trace observability workspace"
+          >
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <p>agent trace / run_9fa21</p>
+            </div>
+            <div class="trace-layout">
+              <aside>
+                <b>AT</b><span>Refund payment</span><span>Account takeover</span
+                ><span>Update address</span>
+              </aside>
+              <div class="trace-main">
+                <div class="trace-title">
+                  <p>EXECUTION PATH</p>
+                  <strong>6 steps · 2,137 tokens</strong>
+                </div>
+                <div class="trace-step">
+                  <i>✦</i
+                  ><span><small>MODEL</small><b>Interpret request</b></span
+                  ><em>620ms</em>
+                </div>
+                <div class="trace-step tool">
+                  <i>⌁</i
+                  ><span><small>TOOL</small><b>Fetch payment history</b></span
+                  ><em>184ms</em>
+                </div>
+                <div class="trace-step decision">
+                  <i>{ }</i
+                  ><span><small>DECISION</small><b>Duplicate confirmed</b></span
+                  ><em>34ms</em>
+                </div>
+                <div class="trace-score">
+                  <span>EVALUATION</span><b>92/100</b>
+                </div>
+              </div>
+            </div>
+            <span class="proof-tag">trace + compare + evaluate</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-meta">
+            <span>03</span>
+            <p>Security · Live</p>
+          </div>
+          <div class="project-copy">
+            <h3>Access Lens</h3>
+            <p class="project-hook">
+              A role-based access designer that tests permissions before
+              release.
+            </p>
+            <p>
+              A permission matrix with per-cell draft diffs, seven
+              least-privilege checks, four-eyes approvals, a permission
+              simulator and CSV audit export.
+            </p>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>Access rules scattered across code and tribal knowledge</dd>
+              </div>
+              <div>
+                <dt>Move</dt>
+                <dd>
+                  Draft diffs, least-privilege checks, four-eyes approvals
+                </dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>Security decisions become reviewable before release</dd>
+              </div>
+            </dl>
+            <div class="decision-note">
+              <span>Key decision</span>
+              <p>
+                Test permissions through a real person, resource, and action
+                instead of asking reviewers to mentally execute a policy file.
+              </p>
+            </div>
+            <p class="project-stack">
+              React · TypeScript · Radix UI · RBAC modelling · Responsive UI
+            </p>
+            <div class="project-links">
+              <a
+                href="https://access-lens-beta.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live app ↗</a
+              ><a
+                href="https://github.com/HardikPShali/access-lens"
+                target="_blank"
+                rel="noreferrer"
+                >Code ↗</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-window accesslens"
+            aria-label="A stylised Access Lens permission workspace"
+          >
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <p>access lens / builder role</p>
+            </div>
+            <div class="access-layout">
+              <aside>
+                <b>AL</b><span>Admin</span><span class="active">Builder</span
+                ><span>Analyst</span><span>Guest</span>
+              </aside>
+              <div class="access-main">
+                <p>ROLE PERMISSIONS</p>
+                <strong>Builder</strong>
+                <div class="permission-row heading">
+                  <span>Resource</span><i>View</i><i>Create</i><i>Edit</i>
+                </div>
+                <div class="permission-row">
+                  <span>Projects</span><i>✓</i><i>✓</i><i>✓</i>
+                </div>
+                <div class="permission-row">
+                  <span>API keys</span><i>✓</i><i>✓</i><i>×</i>
+                </div>
+                <div class="access-test">
+                  <small>PERMISSION SIMULATOR</small><b>✓ Access allowed</b
+                  ><span>Jon can create API keys</span>
+                </div>
+              </div>
+            </div>
+            <span class="proof-tag">matrix + simulator + audit</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-meta">
+            <span>04</span>
+            <p>Operations · Live</p>
+          </div>
+          <div class="project-copy">
+            <h3>OpsPilot</h3>
+            <p class="project-hook">
+              An incident operations workbench for fast, accountable triage.
+            </p>
+            <p>
+              A decision queue with safe-window deadlines, SLA timers, live
+              error-budget burn and keyboard shortcuts for triage. Business
+              logic lives in plain TypeScript reducers covered by unit tests.
+            </p>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>Critical context scattered across operational tools</dd>
+              </div>
+              <div>
+                <dt>Move</dt>
+                <dd>
+                  Decision queue, SLA timers, error-budget burn, shortcuts
+                </dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>A focused workflow from alert to accountable action</dd>
+              </div>
+            </dl>
+            <div class="decision-note">
+              <span>Key decision</span>
+              <p>
+                Lead with the decision and customer impact, then reveal
+                technical detail when the operator needs it.
+              </p>
+            </div>
+            <p class="project-stack">
+              React · TypeScript · Vinext · Responsive UI · Accessibility
+            </p>
+            <div class="project-links">
+              <a
+                href="https://opspilot-ten-nu.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                >Live app ↗</a
+              ><a
+                href="https://github.com/HardikPShali/opspilot"
+                target="_blank"
+                rel="noreferrer"
+                >Code ↗</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-window opspilot"
+            aria-label="A stylised OpsPilot incident operations workbench"
+          >
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <p>opspilot / incident command</p>
+            </div>
+            <div class="ops-layout">
+              <aside>OP<i></i><i></i><i></i></aside>
+              <div class="ops-main">
+                <p>MORNING BRIEF</p>
+                <strong>One decision needs you.</strong>
+                <div class="ops-metrics">
+                  <span>ACTIVE<b>03</b></span
+                  ><span>HEALTHY<b>18/20</b></span>
+                </div>
+                <div class="ops-row hot">
+                  <i>P1</i><b>Checkout latency</b><small>72% SLA</small>
+                </div>
+                <div class="ops-row">
+                  <i>P2</i><b>Webhook delay</b><small>Monitoring</small>
+                </div>
+              </div>
+            </div>
+            <span class="proof-tag">search + filters + decision log</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-meta">
+            <span>05</span>
+            <p>Auction platform · Live</p>
+          </div>
+          <div class="project-copy">
+            <h3>FutureGrail</h3>
+            <p class="project-hook">
+              Auction and catalogue UI for a luxury watch and collectibles
+              platform.
+            </p>
+            <p>
+              I built the auction and catalogue UI in Next.js, TypeScript and
+              Redux Toolkit as part of a 12-person team at Accubits. Lazy
+              loading, component reuse and fewer requests made pages load about
+              30% faster.
+            </p>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>Heavy catalogue pages and repeated UI</dd>
+              </div>
+              <div>
+                <dt>Move</dt>
+                <dd>Lazy loading, component reuse, fewer requests</dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>About 30% faster loads</dd>
+              </div>
+            </dl>
+            <div class="decision-note">
+              <span>Key decision</span>
+              <p>
+                Reuse shared domain components without forcing every marketplace
+                screen into one rigid template.
+              </p>
+            </div>
+            <p class="project-stack">
+              Next.js · TypeScript · Redux Toolkit · REST APIs
+            </p>
+            <div class="project-links">
+              <a href="https://futuregrail.com" target="_blank" rel="noreferrer"
+                >Live product ↗</a
+              ><a
+                href="https://github.com/HardikPShali/FutureGrail"
+                target="_blank"
+                rel="noreferrer"
+                >Code ↗</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-window marketplace"
+            aria-label="A stylised FutureGrail product dashboard"
+          >
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <p>futuregrail / dashboard</p>
+            </div>
+            <div class="market-layout">
+              <aside>FG<br /><i></i><i></i><i></i></aside>
+              <div class="market-main">
+                <p>COLLECTION VALUE</p>
+                <strong>€84,240</strong>
+                <div class="chart"><i></i></div>
+                <div class="cards">
+                  <span>Watchlist<br /><b>24</b></span
+                  ><span>Movement<br /><b>+18.4%</b></span>
+                </div>
+              </div>
+            </div>
+            <span class="proof-tag">~30% faster loads</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-meta">
+            <span>06</span>
+            <p>Healthcare · Real-time</p>
+          </div>
+          <div class="project-copy">
+            <h3>HealthierU</h3>
+            <p class="project-hook">
+              Video consultations and appointment scheduling for a Dubai-based
+              client.
+            </p>
+            <p>
+              I built the React frontend for online video consultations with the
+              Agora SDK, plus appointment scheduling, as part of an 8-person
+              team at Accubits. Responsive layouts and clear connection states
+              kept the experience calm across devices.
+            </p>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>Multi-step, high-trust patient journeys</dd>
+              </div>
+              <div>
+                <dt>Move</dt>
+                <dd>Agora video, responsive flows, clear states</dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>Dependable consultations across devices</dd>
+              </div>
+            </dl>
+            <div class="decision-note">
+              <span>Key decision</span>
+              <p>
+                Make connection, permission and failure states visible so
+                patients always know what the system is doing.
+              </p>
+            </div>
+            <p class="project-stack">
+              React · Material UI · Agora SDK · REST APIs
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/HardikPShali/HealthierU_React"
+                target="_blank"
+                rel="noreferrer"
+                >Code ↗</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-window health"
+            aria-label="A stylised HealthierU consultation interface"
+          >
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <p>healthieru / consultation</p>
+            </div>
+            <div class="video-stage">
+              <div class="doctor">DR</div>
+              <div class="patient">HS</div>
+              <p>Dr. Sarah · connected</p>
+              <div class="controls"><i>◉</i><i>⌁</i><i>×</i></div>
+            </div>
+            <span class="proof-tag">real-time + responsive</span>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-meta">
+            <span>07</span>
+            <p>Full-stack · Code test</p>
+          </div>
+          <div class="project-copy">
+            <h3>Resort Map</h3>
+            <p class="project-hook">
+              A text-based resort map turned into an interactive booking app.
+            </p>
+            <p>
+              I turned a text map into an interactive cabana-booking experience,
+              owning the parser, Node API, React interface, booking flow,
+              persistence, and tests.
+            </p>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>Raw map data with booking rules</dd>
+              </div>
+              <div>
+                <dt>Move</dt>
+                <dd>Parser, REST API, interactive React map</dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>Tested end-to-end booking experience</dd>
+              </div>
+            </dl>
+            <div class="decision-note">
+              <span>Key decision</span>
+              <p>
+                Keep map parsing and booking rules on the server while the
+                client focuses on interaction and clear availability.
+              </p>
+            </div>
+            <p class="project-stack">React · Vite · Node.js · Express · Jest</p>
+            <div class="project-links">
+              <a
+                href="https://resort-map-app.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                >Live app ↗</a
+              ><a
+                href="https://github.com/HardikPShali/Resort-Map-App"
+                target="_blank"
+                rel="noreferrer"
+                >Code ↗</a
+              >
+            </div>
+          </div>
+          <div
+            class="product-window resort"
+            aria-label="A stylised interactive resort map"
+          >
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <p>resort / live map</p>
+            </div>
+            <div class="resort-map">
+              <div class="water">POOL</div>
+              <div class="cabana c1">C1<small>Free</small></div>
+              <div class="cabana c2">C2<small>Booked</small></div>
+              <div class="cabana c3">C3<small>Free</small></div>
+              <div class="walkway"></div>
+            </div>
+            <span class="proof-tag">frontend → API → file</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="thinking section" id="thinking">
+        <div class="section-head reveal">
+          <p class="overline">02 / Engineering judgment</p>
+          <h2>Decisions before<br /><em>decoration.</em></h2>
+          <p>
+            Strong engineering reduces uncertainty in the problem, architecture,
+            delivery and result.
+          </p>
         </div>
-        <div class="timeline">
-          <div><span>2021</span><strong>Started shipping at Accubits</strong><small>Intern → Frontend Engineer</small></div>
-          <div><span>2023</span><strong>Moved closer to business problems</strong><small>Implementation Consultant</small></div>
-          <div><span>2024</span><strong>Moved to Berlin</strong><small>M.Sc. Data Science</small></div>
-          <div><span>2026</span><strong>Built Resort Map end to end</strong><small>React / Node.js / tested APIs</small></div>
+        <div class="method-grid">
+          <article class="reveal">
+            <span>01</span>
+            <h3>Frame the constraint</h3>
+            <p>
+              I align user need, business value, and system reality before
+              choosing a solution. The best architecture starts with a better
+              question.
+            </p>
+            <small>Clarity before velocity</small>
+          </article>
+          <article class="reveal">
+            <span>02</span>
+            <h3>Design for change</h3>
+            <p>
+              Clear contracts, predictable state, and deliberate boundaries keep
+              today’s feature from becoming tomorrow’s migration project.
+            </p>
+            <small>Simple scales further</small>
+          </article>
+          <article class="reveal">
+            <span>03</span>
+            <h3>Make impact observable</h3>
+            <p>
+              Performance work deserves numbers. Product decisions deserve user
+              impact. Otherwise “better” is just an opinion.
+            </p>
+            <small>Evidence over opinion</small>
+          </article>
+          <article class="reveal">
+            <span>04</span>
+            <h3>Lower the next cost</h3>
+            <p>
+              Tests, documentation, reusable patterns, and thoughtful reviews
+              make every future change safer and faster.
+            </p>
+            <small>Build team leverage</small>
+          </article>
         </div>
-      </div>
-    </section>
+        <div class="architecture reveal">
+          <div class="arch-title">
+            <p class="overline">A typical feature, end to end</p>
+            <span>Hover or tap the nodes</span>
+          </div>
+          <div class="arch-flow">
+            <button
+              data-detail="Accessible, responsive interface built around the user journey"
+            >
+              <i>01</i>Vue / React UI
+            </button>
+            <span>→</span
+            ><button
+              data-detail="Typed state and explicit loading, success, and error paths"
+            >
+              <i>02</i>State
+            </button>
+            <span>→</span
+            ><button
+              data-detail="Clear contracts, validation, and useful failure messages"
+            >
+              <i>03</i>REST API
+            </button>
+            <span>→</span
+            ><button
+              data-detail="Reliable services, persistence, monitoring, and deployment"
+            >
+              <i>04</i>System
+            </button>
+          </div>
+          <p class="arch-detail" aria-live="polite">
+            One product decision, understood across the whole system.
+          </p>
+        </div>
+      </section>
 
-    <section class="education section" id="education">
-      <div class="section-head reveal">
-        <p class="overline">05 / Education</p>
-        <h2>Two master’s.<br><em>Zero fear of homework.</em></h2>
-        <p>Software gave me the foundation. Data Science taught me to question what the system is actually saying.</p>
-      </div>
-      <div class="degree-grid">
-        <article class="degree degree-featured reveal">
-          <div class="degree-top"><span>2024 - 2025</span><small>Berlin, Germany</small></div>
-          <p class="degree-type">Master of Science</p>
-          <h3>Data Science</h3>
-          <p>IU International University of Applied Sciences</p>
-          <div class="degree-bottom"><strong>Grade 1.9</strong><span>English-taught programme</span></div>
-        </article>
-        <article class="degree reveal">
-          <div class="degree-top"><span>2020 - 2022</span><small>Surat, India</small></div>
-          <p class="degree-type">Master of Science</p>
-          <h3>Information Technology</h3>
-          <p>Veer Narmad South Gujarat University</p>
-          <div class="degree-bottom"><strong>Systems</strong><span>Software engineering foundation</span></div>
-        </article>
-        <article class="degree reveal">
-          <div class="degree-top"><span>2017 - 2020</span><small>Surat, India</small></div>
-          <p class="degree-type">Bachelor of Science</p>
-          <h3>Information Technology</h3>
-          <p>Veer Narmad South Gujarat University</p>
-          <div class="degree-bottom"><strong>Where it started</strong><span>Code, data, and a lot of curiosity</span></div>
-        </article>
-      </div>
-      <p class="education-note reveal">The short version: I understand both the interface people touch and the data moving underneath it.</p>
-    </section>
+      <section class="experience section" id="experience">
+        <div class="section-head reveal">
+          <p class="overline">03 / Experience</p>
+          <h2>Scope grew.<br /><em>So did ownership.</em></h2>
+          <p>
+            A career moving from implementation to production engineering, and
+            from isolated screens to the systems and business rules behind them.
+          </p>
+        </div>
+        <div class="experience-list">
+          <article class="role reveal">
+            <div class="role-when">
+              <strong>Independent</strong><span>Jul 2025 - Present</span
+              ><small>Software Engineer · Berlin</small>
+            </div>
+            <div class="role-story">
+              <h3>Designed, built and deployed four live products.</h3>
+              <p>
+                Four TypeScript frontend products, with business logic in plain
+                TypeScript reducers covered by unit tests. Keyboard-operable,
+                responsive UIs with Radix primitives, non-colour status cues,
+                reduced-motion support and mobile drawer layouts.
+              </p>
+            </div>
+            <div class="role-signal">
+              <span>TypeScript</span><span>Accessibility</span
+              ><span>Unit testing</span>
+            </div>
+          </article>
+          <article class="role reveal">
+            <div class="role-when">
+              <strong>ThoughtSpark</strong><span>Apr - Sep 2023</span
+              ><small>Implementation Consultant</small>
+            </div>
+            <div class="role-story">
+              <h3>Translated operations into working systems.</h3>
+              <p>
+                Turned unclear client requirements into data models, workflow
+                logic and validation rules, working with Product and
+                Engineering.
+              </p>
+            </div>
+            <div class="role-signal">
+              <span>Business analysis</span><span>Workflow design</span
+              ><span>Data modelling</span>
+            </div>
+          </article>
+          <article class="role reveal">
+            <div class="role-when">
+              <strong>Accubits</strong><span>Apr 2022 - Apr 2023</span
+              ><small>Software Engineer · Frontend</small>
+            </div>
+            <div class="role-story">
+              <h3>Shipped product experiences at production scale.</h3>
+              <p>
+                Shipped customer-facing Vue.js and React features in TypeScript
+                for products used by 10,000+ users, in teams of 8 to 12. Cut
+                page load time by 40% through profiling, code splitting and lazy
+                loading, and built reusable, accessible components from Figma
+                designs.
+              </p>
+            </div>
+            <div class="role-signal">
+              <span>Vue.js + React</span><span>Performance</span
+              ><span>Design systems</span>
+            </div>
+          </article>
+          <article class="role reveal">
+            <div class="role-when">
+              <strong>Accubits</strong><span>Dec 2021 - Apr 2022</span
+              ><small>Software Developer Intern</small>
+            </div>
+            <div class="role-story">
+              <h3>Learned the production standard quickly.</h3>
+              <p>
+                Implemented TypeScript features from system designs, with REST
+                API integration, validation and unit tests.
+              </p>
+            </div>
+            <div class="role-signal">
+              <span>Delivery habits</span><span>API integration</span
+              ><span>Responsive UI</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section class="stack section">
-      <div class="section-head compact reveal"><p class="overline">06 / Technical range</p><h2>Tools change.<br><em>Principles travel.</em></h2></div>
-      <div class="stack-table reveal">
-        <div><span>Build daily</span><p>React · TypeScript · Next.js · JavaScript · HTML · CSS</p></div>
-        <div><span>Shape the UI</span><p>Figma · Design Systems · Tailwind · Material UI · Accessibility</p></div>
-        <div><span>Connect the system</span><p>Node.js · Express · REST APIs · Firebase · SQL · MongoDB</p></div>
-        <div><span>Keep it honest</span><p>Jest · Playwright · Git · CI/CD · Code Reviews · DevTools</p></div>
-      </div>
-    </section>
+      <section class="story section" id="story">
+        <div class="story-photo reveal">
+          <img
+            src="./profile-professional.jpeg"
+            alt=""
+            width="1238"
+            height="1271"
+            loading="lazy"
+          />
+          <div class="photo-note">
+            Formal photo.<br />Informal problem solver.
+          </div>
+        </div>
+        <div class="story-copy reveal">
+          <p class="overline">04 / The human context</p>
+          <h2>
+            India built my foundation.<br /><em>Berlin widened the lens.</em>
+          </h2>
+          <p class="story-lead">
+            I’m a frontend developer with two master’s degrees and a habit of
+            looking for the problem behind the problem.
+          </p>
+          <div class="story-columns">
+            <p>
+              At Accubits, I learned to ship production React products,
+              collaborate closely with design and backend teams, and take
+              ownership beyond the happy path.
+            </p>
+            <p>
+              At ThoughtSpark, I translated messy business rules into usable
+              workflows. My Data Science master’s in Berlin added a stronger
+              understanding of data-driven systems.
+            </p>
+          </div>
+          <div class="timeline">
+            <div>
+              <span>2021</span><strong>Started shipping at Accubits</strong
+              ><small>Intern → Frontend Engineer</small>
+            </div>
+            <div>
+              <span>2023</span><strong>Moved closer to business problems</strong
+              ><small>Implementation Consultant</small>
+            </div>
+            <div>
+              <span>2023</span><strong>Moved to Berlin</strong
+              ><small>M.Sc. Data Science, 2024 - 2025</small>
+            </div>
+            <div>
+              <span>2025</span><strong>Went independent</strong
+              ><small>Four live TypeScript products</small>
+            </div>
+            <div>
+              <span>2026</span><strong>Built Resort Map end to end</strong
+              ><small>React / Node.js / tested APIs</small>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="contact" id="contact">
-      <div class="contact-top reveal"><p class="overline">07 / Start a conversation</p><span>Available immediately · Berlin</span></div>
-      <h2 class="reveal">Building something<br>that deserves<br><em>good judgment?</em></h2>
-      <div class="contact-bottom reveal">
-        <a href="mailto:hardikshali1612@gmail.com">hardikshali1612@gmail.com <span>↗</span></a>
-        <div><a href="https://linkedin.com/in/hardikshali" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/HardikPShali" target="_blank" rel="noreferrer">GitHub ↗</a><a href="Hardik_Shali_CV.pdf" download="Hardik Shali CV.pdf">CV ↓</a></div>
-      </div>
-      <p class="signoff">Built by Hardik. No website builders were emotionally harmed.</p>
-    </section>
-  </main>
-  <footer><span>© 2026 Hardik Shali</span><button type="button" data-top>Back to top ↑</button><span>English C1 · German A2 and improving</span></footer>
-  <script src="./script.js"></script>
-</body>
+      <section class="education section" id="education">
+        <div class="section-head reveal">
+          <p class="overline">05 / Education</p>
+          <h2>Two master’s.<br /><em>Software and data.</em></h2>
+          <p>
+            Software gave me the foundation. Data Science taught me to question
+            what the system is actually saying.
+          </p>
+        </div>
+        <div class="degree-grid">
+          <article class="degree degree-featured reveal">
+            <div class="degree-top">
+              <span>2024 - 2025</span><small>Berlin, Germany</small>
+            </div>
+            <p class="degree-type">Master of Science</p>
+            <h3>Data Science</h3>
+            <p>IU International University of Applied Sciences</p>
+            <div class="degree-bottom">
+              <strong>Grade 1.9</strong><span>English-taught programme</span>
+            </div>
+          </article>
+          <article class="degree reveal">
+            <div class="degree-top">
+              <span>2020 - 2022</span><small>Surat, India</small>
+            </div>
+            <p class="degree-type">Master of Science</p>
+            <h3>Information Technology</h3>
+            <p>Veer Narmad South Gujarat University</p>
+            <div class="degree-bottom">
+              <strong>Systems</strong
+              ><span>Software engineering foundation</span>
+            </div>
+          </article>
+          <article class="degree reveal">
+            <div class="degree-top">
+              <span>2017 - 2020</span><small>Surat, India</small>
+            </div>
+            <p class="degree-type">Bachelor of Science</p>
+            <h3>Information Technology</h3>
+            <p>Veer Narmad South Gujarat University</p>
+            <div class="degree-bottom">
+              <strong>Where it started</strong
+              ><span>Code, data, and a lot of curiosity</span>
+            </div>
+          </article>
+        </div>
+        <p class="education-note reveal">
+          The short version: I understand both the interface people touch and
+          the data moving underneath it.
+        </p>
+      </section>
+
+      <section class="stack section">
+        <div class="section-head compact reveal">
+          <p class="overline">06 / Technical range</p>
+          <h2>Tools change.<br /><em>Principles travel.</em></h2>
+        </div>
+        <div class="stack-table reveal">
+          <div>
+            <span>Build daily</span>
+            <p>
+              TypeScript · JavaScript (ES6+) · Vue.js · React · Next.js · HTML5
+              · CSS3
+            </p>
+          </div>
+          <div>
+            <span>Shape the UI</span>
+            <p>
+              Figma · Design systems · Tailwind CSS · Radix UI · Material UI ·
+              Accessibility
+            </p>
+          </div>
+          <div>
+            <span>Connect the system</span>
+            <p>
+              REST API integration · Redux Toolkit · React Context · Component
+              architecture
+            </p>
+          </div>
+          <div>
+            <span>Keep it honest</span>
+            <p>
+              Jest · Playwright · Code reviews · Git · CI/CD · Vite · webpack ·
+              Vercel · AWS (S3, Lambda)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-top reveal">
+          <p class="overline">07 / Start a conversation</p>
+          <span>Available immediately · Berlin</span>
+        </div>
+        <h2 class="reveal">
+          Building something<br />that deserves<br /><em>good judgment?</em>
+        </h2>
+        <div class="contact-bottom reveal">
+          <a href="mailto:hardikshali1612@gmail.com"
+            >hardikshali1612@gmail.com <span>↗</span></a
+          >
+          <div>
+            <a
+              href="https://linkedin.com/in/hardikshali"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn ↗</a
+            ><a
+              href="https://github.com/HardikPShali"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub ↗</a
+            ><a href="Hardik_Shali_CV.pdf" download="Hardik Shali CV.pdf"
+              >CV ↓</a
+            >
+          </div>
+        </div>
+        <p class="signoff">Built by hand with HTML, CSS and JavaScript.</p>
+      </section>
+    </main>
+    <footer>
+      <span>© 2026 Hardik Shali</span
+      ><button type="button" data-top>Back to top ↑</button
+      ><span>English C1 · German A2 and improving</span>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>

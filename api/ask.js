@@ -1,8 +1,11 @@
 // POST /api/ask — Vercel serverless function that answers questions about Hardik,
 // grounded only in api/profile.js, and streams the answer back as plain text.
-// Requires the OPENAI_API_KEY environment variable in the Vercel project settings.
+// Requires AI_API_KEY in the Vercel project settings: a free Gemini key from Google AI Studio by default,
+// or any OpenAI-compatible provider's key together with AI_BASE_URL.
 const PROFILE = require("./profile");
 
+const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai";
+const apiKey = () => process.env.AI_API_KEY || process.env.OPENAI_API_KEY;
 const MAX_QUESTION = 400;
 const MAX_HISTORY = 6;
 const WINDOW_MS = 10 * 60 * 1000;
@@ -58,7 +61,7 @@ async function handler(req, res) {
     res.setHeader("Allow", "POST");
     return res.status(405).json({ error: "Use POST." });
   }
-  if (!process.env.OPENAI_API_KEY) return res.status(503).json({ error: "The assistant is not configured yet." });
+  if (!apiKey()) return res.status(503).json({ error: "The assistant is not configured yet." });
 
   const ip = String(req.headers["x-forwarded-for"] || "").split(",")[0].trim() || "unknown";
   if (rateLimited(ip)) return res.status(429).json({ error: "Too many questions. Please try again in a few minutes." });
@@ -77,15 +80,19 @@ async function handler(req, res) {
 
   let upstream;
   try {
-    upstream = await fetch(`${(process.env.OPENAI_BASE_URL || "https://api.openai.com/v1").replace(/\/$/, "")}/chat/completions`, {
+    const base = (process.env.AI_BASE_URL || process.env.OPENAI_BASE_URL || GEMINI_BASE_URL).replace(/\/$/, "");
+    const isGemini = base.includes("generativelanguage.googleapis.com");
+    upstream = await fetch(`${base}/chat/completions`, {
       method: "POST",
       signal: controller.signal,
-      headers: { "content-type": "application/json", authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
+      headers: { "content-type": "application/json", authorization: `Bearer ${apiKey()}` },
       body: JSON.stringify({
-        model: process.env.OPENAI_MODEL || "gpt-4.1-mini",
+        model: process.env.AI_MODEL || process.env.OPENAI_MODEL || "gemini-flash-latest",
+        // Gemini models think before answering; keep it short so the budget goes to the answer.
+        ...(isGemini ? { reasoning_effort: "low" } : {}),
         stream: true,
         temperature: 0.2,
-        max_tokens: 220,
+        max_tokens: 600,
         messages: [{ role: "system", content: SYSTEM_PROMPT }, ...cleanHistory(body.history), { role: "user", content: question }],
       }),
     });

@@ -63,3 +63,67 @@ addEventListener("keydown", (event) => {
     menuToggle.focus();
   }
 });
+
+// Ask my portfolio: streams answers from /api/ask (grounded in api/profile.js).
+const askForm = document.querySelector(".ask-form");
+if (askForm) {
+  const input = askForm.querySelector("input");
+  const submit = askForm.querySelector(".ask-submit");
+  const log = document.querySelector(".ask-log");
+  const history = [];
+  let busy = false;
+
+  const ask = async (question) => {
+    question = question.trim();
+    if (!question || busy) return;
+    busy = true;
+    submit.disabled = true;
+    input.value = "";
+
+    const turn = document.createElement("div");
+    turn.className = "ask-turn";
+    const q = document.createElement("p");
+    q.className = "q";
+    q.textContent = question;
+    const a = document.createElement("p");
+    a.className = "a pending";
+    turn.append(q, a);
+    log.prepend(turn);
+
+    try {
+      const res = await fetch("/api/ask", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ question, history }),
+      });
+      if (!res.ok || !res.body) {
+        const data = await res.json().catch(() => null);
+        throw new Error(data?.error || "The assistant is unavailable right now.");
+      }
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      for (;;) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        a.textContent += decoder.decode(value, { stream: true });
+      }
+      history.push({ role: "user", content: question }, { role: "assistant", content: a.textContent });
+      history.splice(0, Math.max(0, history.length - 6));
+    } catch (error) {
+      a.textContent = `${error.message} You can always email hardikshali1612@gmail.com.`;
+      a.classList.add("error");
+    } finally {
+      a.classList.remove("pending");
+      busy = false;
+      submit.disabled = false;
+    }
+  };
+
+  askForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    ask(input.value);
+  });
+  document.querySelectorAll(".ask-chips button").forEach((chip) =>
+    chip.addEventListener("click", () => ask(chip.textContent)),
+  );
+}

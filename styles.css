@@ -2009,3 +2009,131 @@ nav a:focus-visible {
     transition: none;
   }
 }
+
+/* Ask my portfolio (AI assistant) */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.ask-panel {
+  max-width: 980px;
+  margin-left: auto;
+  border-top: 1px solid #444;
+  padding-top: 36px;
+}
+.ask-intro {
+  margin: 0 0 28px;
+  max-width: 560px;
+  color: #aaa;
+  line-height: 1.65;
+}
+.ask-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+.ask-chips button {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--white);
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-radius: 999px;
+}
+.ask-chips button:hover,
+.ask-chips button:focus-visible {
+  border-color: var(--lime);
+  color: var(--lime);
+  outline: none;
+}
+.ask-form {
+  display: flex;
+  border: 1px solid #555;
+}
+.ask-form input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--white);
+  font: inherit;
+  font-size: 1.05rem;
+  padding: 18px 20px;
+  outline: none;
+}
+.ask-form:focus-within {
+  border-color: var(--lime);
+}
+.ask-submit {
+  border: 0;
+  background: var(--lime);
+  color: #000;
+  font-weight: 800;
+  padding: 0 26px;
+  cursor: pointer;
+}
+.ask-submit:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+.ask-log {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+.ask-log:empty {
+  display: none;
+}
+.ask-turn {
+  border-left: 2px solid #444;
+  padding-left: 18px;
+}
+.ask-turn .q {
+  margin: 0 0 8px;
+  font: 400 0.72rem var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--lime);
+}
+.ask-turn .a {
+  margin: 0;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+.ask-turn .a.error {
+  color: var(--orange);
+}
+.ask-turn .a.pending::after {
+  content: "▍";
+  color: var(--lime);
+  animation: ask-blink 1s steps(1) infinite;
+}
+@keyframes ask-blink {
+  50% {
+    opacity: 0;
+  }
+}
+.ask-note {
+  margin: 22px 0 0;
+  font-size: 0.78rem;
+  color: #777;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ask-turn .a.pending::after {
+    animation: none;
+  }
+}
+@media (max-width: 760px) {
+  .ask-form {
+    flex-direction: column;
+  }
+  .ask-submit {
+    padding: 16px;
+  }
+}

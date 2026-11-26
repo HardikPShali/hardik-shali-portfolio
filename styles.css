@@ -2137,3 +2137,21 @@ nav a:focus-visible {
     padding: 16px;
   }
 }
+
+/* AI feature line on project cards */
+.project-ai {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  border-left: 2px solid var(--lime);
+  padding-left: 14px;
+  color: #d6d6d0 !important;
+}
+.project-ai span {
+  flex: none;
+  font: 700 0.66rem var(--mono);
+  letter-spacing: 0.08em;
+  color: #000;
+  background: var(--lime);
+  padding: 2px 6px;
+}
